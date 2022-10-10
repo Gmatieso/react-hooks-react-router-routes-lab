@@ -4,11 +4,11 @@ import { directors } from "../data";
 function Directors() {
 // making a new div for each director then mapping the data 
 const director = directors.map((director)=>
-(<div key={director.index}>
+(<div key={director.name}>
   <h2>{director.name}</h2>
   <ul>
     {director.movies.map((movie)=>
-    <li key={movie.index}>
+    <li key={movie}>
       {movie}
     </li>
     )}
