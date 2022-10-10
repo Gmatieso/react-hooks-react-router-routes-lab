@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 // Renders our four NavLinks  components i.e Home, Movies, Directors, and Actors     
 function NavBar() {
   return (
-  <div>
+  <div className="navbar">
     <NavLink
     to ="/"
     exact >
