@@ -8,9 +8,9 @@ function Actors() {
     <div key={actor.index}>
       <h2>{actor.name}</h2>
       <ul>
-        {actor.movies.map((movi)=>
-        <li key={movi.index}>
-          {movi}
+        {actor.movies.map((muvi)=>
+        <li key={muvi.index}>
+          {muvi}
         </li>
         )}
       </ul>
