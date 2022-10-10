@@ -5,11 +5,11 @@ function Actors() {
   // making a new div for each Actor then mapping the data 
   const actorsItems = actors.map((actor)=>
   (
-    <div key={actor.index}>
+    <div key={actor.name}>
       <h2>{actor.name}</h2>
       <ul>
         {actor.movies.map((muvi)=>
-        <li key={muvi.index}>
+        <li key={muvi}>
           {muvi}
         </li>
         )}
