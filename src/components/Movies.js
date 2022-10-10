@@ -5,13 +5,13 @@ import { movies } from "../data";
 function Movies() {
 // using map to loop through a set of data 
   const myMovies = movies.map((movie) =>(
-    <div key={movie.index}>
+    <div key={movie.title}>
       <h2>{movie.title}</h2>
     <p>Runtime: {movie.time} min.</p>
 
     <ul>
-      {movies.genres.map((genre)=>
-      (<li key={genre.index}>{genre}</li>
+      {movie.genres.map((genre)=>
+      (<li key={genre}>{genre}</li>
       ))}
     </ul>
     </div>
